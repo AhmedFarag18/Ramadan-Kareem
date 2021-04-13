@@ -11,6 +11,7 @@ button:hover {
 
 body {
     overflow-x: hidden;
+    height: 100vh;
 }
 
 
@@ -60,9 +61,10 @@ button {
     border-radius: 50%;
     transition: transform .5s;
     cursor: pointer;
+    z-index: 54;
 }
 
-button:active {
+button:focus {
     outline: none;
 }
 
@@ -137,7 +139,7 @@ h2 {
     }
     h2 {
         margin: 0 20px;
-        font-size: 30px;
+        font-size: 32px;
         color: aliceblue;
     }
     button {
