@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramadan Kareem</title>
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>ramadan kareem</h1>
+        <div class="card">
+            <button onclick="decrement()">-</button>
+            <h2 id="root"></h2>
+            <button onclick="increment()">+</button>
+
+            <div class="animate">
+                <div class="image">
+                    <img src="img/fanos.76a0fd77.svg" class="fanos" alt="">
+                    <img src="img/fanos.76a0fd77.svg" class="fanos2" alt="">
+                    <img src="img/moon.947a0a78.svg" class="heleal" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>
+        var data = 0;
+        document.getElementById('root').innerText = data;
+
+        function decrement() {
+            data = data - 1;
+            document.getElementById('root').innerText = data;
+        }
+
+        function increment() {
+            data = data + 1;
+            document.getElementById('root').innerText = data;
+        }
+    </script>
+</body>
+
+</html>
